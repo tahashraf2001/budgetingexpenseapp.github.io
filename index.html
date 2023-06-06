@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Budgeting Expense App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Monthly Budeting App</h2>
+    
+    <div id="budgetSection">
+      <h3>Monthly Budget</h3>
+      <div class="input-group">
+        <label for="budgetAmount">Budget Amount:</label>
+        <input type="number" id="budgetAmount" placeholder="Enter budget amount">
+      </div>
+      <button class="btn" onclick="setBudget()">Add Budget</button>
+    </div>
+    
+    <hr>
+    
+    <div id="expenseSection" style="display: none;">
+      <h3>Expense Details</h3>
+      <div class="input-group">
+        <label for="Category">Expense Category:</label>
+        <input type="text" id="Category" placeholder="Enter Category">
+      </div>
+      <div class="input-group">
+        <label for="expenseName">Expense Name:</label>
+        <input type="text" id="expenseName" placeholder="Enter expense name">
+      </div>
+      <div class="input-group">
+        <label for="expenseAmount">Expense Amount:</label>
+        <input type="number" id="expenseAmount" placeholder="Enter expense amount">
+      </div>
+      <div class="input-group">
+        <label for="expenseName">Date:</label>
+        <input type="text" id="expenseName" placeholder="mm/dd/yyyy">
+      <button class="btn" onclick="recordExpense()">Add Expense</button>
+    </div>
+    
+    <hr>
+    
+    <div id="expenseTableSection" style="display: none;">
+      <h3>Expense Table</h3>
+      <table id="expenseTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody id="expenseTableBody"></tbody>
+      </table>
+    </div>
+    
+    <hr>
+    
+    <div id="remainingBudgetSection" style="display: none;">
+      <h3>Remaining Budget</h3>
+      <p id="remainingBudget"></p>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
